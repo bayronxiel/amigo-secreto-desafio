@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AmigoSecreto</title>
+        <link rel="stylesheet" href="./styles/styles.css">
+    </head>
+    <body>
+        
+            <main class="presentacion">
+                <section class="texto">
+                    <h1 class="contenidoTitulo"><strong class="titulo">AMIGO SECRETO</strong>
+                    </h1>
+                 <p class="contenidoParrafo">Nuestro <strong>generador del amigo invisible</strong> escogerá, de forma automática y aleatoria,
+                     a quién deberá realizar el regalo cada participante.
+                    </p>
+                    <div class="botonesLink">
+                        
+                        <div class="input-wrapper">
+                            <input type="text" id="amigo" class="input-name" placeholder="Escribe un nombre">
+                            <button class="button-add" onclick="agregarAmigo()">Añadir</button>
+                        </div>
+                       
+                        <ul id="listaAmigos" class="name-list" aria-labelledby="listaAmigos" role="list"></ul>
+                        <ul id="resultado" class="result-list" aria-live="polite"></ul>
+
+                    <button class="botonLink" onclick="sortearAmigo()">
+                        <img src="./assets/play_circle_outline.png" alt="Ícono para sortear">
+                         Sortear amigo </button>
+                    <button class="botonLink1" onclick="vaciarLista()" >
+                        <img src="./assets/delete_outline.png" alt="Ícono para vaciar lista">
+                        Vaciar lista</button>
+                    </div>
+                </section>  
+                <img class="ima" src="./assets/Imagen.png" alt="imagen ana">
+        </main>
+        <footer class="foter">
+            <p> Desarrollado por Bayron Llanos</p>
+        </footer>
+        <script src="app.js" defer></script>
+    </body>
+</html>
